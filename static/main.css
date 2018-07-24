@@ -1,0 +1,71 @@
+
+body {
+    background-color: rgb(166, 175, 175);
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: rgb(223, 230, 230);
+    /* transform: rotate(20deg); */
+}
+
+#table {
+    /* border: none;
+    margin: 0 auto; */
+    /* padding: 0; */
+    /* position: relative; */
+    /* float: left; */
+    /* border: 2px solid black; */
+    margin: 20px;
+    width: fit-content;
+    /* height: 300px; */
+    overflow: auto;
+    /* transform: translate(200px, 200px) rotate(20deg); */
+    /* transform: skewX(-20deg) translateX(50px); */
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* #authors {
+    box-shadow: 5px 5px 5px gray;
+} */
+
+#pass {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    /* float: right; */
+    box-shadow: 5px 5px 5px grey;
+}
+
+td {
+    border: 1px solid black;
+    
+    padding-left: 15px;
+    text-align: left;
+}
+
+th {
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(171, 207, 207);
+    color: rgb(104, 67, 37);
+    border: 2px solid black;
+    margin: 0 0 0 0;
+}
+/* th:hover {background-color: rgb(223, 230, 230);} */
+
+
+
+tr:nth-child(even) {
+    background-color: rgb(194, 199, 199);;
+}
+tr:hover {
+    background-color: rgb(142, 189, 189);
+}
+
+.user table {
+    background-color: rgb(172, 91, 91);
+    border: none;
+}

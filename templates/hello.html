@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>template test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css?version=1.0" />
+</head>
+
+<body>
+    <h1>{{name}}</h1>
+    <form action="">
+        <div id="table">
+
+            <table id="authors">
+                <tr>
+                    <th>AuthorID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Select</th>
+                </tr>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item[0] }}</td>
+                    <td>{{ item[1] }}</td>
+                    <td>{{ item[2] }}</td>
+                    <td>
+                        <input type="checkbox" name="name" id="">
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam quibusdam officiis dolorem deserunt numquam ipsum molestias repellat a eaque amet, sequi earum fugit labore error laboriosam quaerat dignissimos ab!
+<div id="pass">
+
+        <table id="user">
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" placeholder="Jan Kowalski">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" name="" id="" placeholder="password">
+                </td>
+            </tr>
+        </table>
+</div>
+
+    </form>
+</body>
+
+</html>
