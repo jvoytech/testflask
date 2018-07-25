@@ -1,21 +1,22 @@
 #!/usr/bin/env python
 
 import os, json
+import configparser
 from flask import Flask, render_template
 
 from mgr import ManagedMySqlContext, ManageMySqlCursor
 
 mysql_cfg = {}
 
-with open('db.json') as f:
-    mysql_cfg = json.load(f)
+config = configparser.ConfigParser()
+config.read('db.ini')
+mysql_cfg.update(**config['DEFAULT'])
 
 app = Flask(__name__, static_url_path='')
 
 @app.route('/')
 def hello_world():
     
-    print(mysql_cfg)
     with ManagedMySqlContext(mysql_cfg) as ctx:
         with ManageMySqlCursor(ctx) as cursor:
             
